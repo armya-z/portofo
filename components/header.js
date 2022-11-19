@@ -1,19 +1,44 @@
+import Image from "next/image";
+import Logo from "../public/img/c.png";
+export default function Header() {
+  return (
+    <div className="sticky top-0 z-10  shadow ">
+      <div className="mx-auto flex h-16 items-center justify-between px-5">
+        <Image
+          src={Logo}
+          alt="logo of chapclick"
+          width={60}
+          height={60}
+          quality={100}
+        />
 
-export default function Header (){
-    return (
-        <div className="shadow bg-white">
-  <div className="h-16 mx-auto px-5 flex items-center justify-between">
-      <a className="text-black text-2xl hover:text-cyan-500 transition-colors cursor-pointer">Logo</a>
-      
-      <ul className="justify-center text-black flex items-center gap-5">
-        <li><a className="hover:text-cyan-500 transition-colors" href="">contact us</a></li>
-        <li><a className="hover:text-cyan-500 transition-colors" href="">about us</a></li>
-        <li><a className="hover:text-cyan-500 transition-colors" href="">home page</a></li>
-
+        <ul className="flex items-center justify-center gap-5 text-black">
+          <li>
+            <a
+              className="transition-colors hover:text-cyan-500"
+              href=""
+            >
+              contact us
+            </a>
+          </li>
+          <li>
+            <a
+              className="transition-colors hover:text-cyan-500"
+              href=""
+            >
+              about us
+            </a>
+          </li>
+          <li>
+            <a
+              className="transition-colors hover:text-cyan-500"
+              href=""
+            >
+              home page
+            </a>
+          </li>
         </ul>
-        
-        
-  </div>
-</div>
-    )
+      </div>
+    </div>
+  );
 }
