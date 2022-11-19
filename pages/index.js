@@ -3,18 +3,28 @@ import IntroCard from "../components/introCard.js";
 export default function Home({ members }) {
   return (
     <>
-      <h1 className="text-center text-4xl m-5 font-serif font-medium">
-        Chap Click Team Members
-      </h1>
-
-      <div className="flex fllex-row w-auto">
-        {members.map((member) => {
-          return (
-            <div key={member.id}>
-              <IntroCard member={member} />
-            </div>
-          );
-        })}
+      <div className="bg-main2 bg-cover bg-fixed">
+        <h1 className="p-5 text-center font-serif text-4xl text-white">
+          Chap Click Team Members
+        </h1>
+        <div className="fllex-row flex w-full bg-white bg-opacity-0">
+          {members.map((member) => {
+            return (
+              <div key={member.id}>
+                <IntroCard member={member} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
       </div>
     </>
   );

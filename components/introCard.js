@@ -16,7 +16,7 @@ export default function IntroCard({ member }) {
     (member, index) => (
       <li
         key={member}
-        className={`${listColor[index]} justify-evenly text-black italic text-sm rounded-lg w-16 p-1 m-2 flex flex-row`}
+        className={`${listColor[index]} m-2 flex w-16 animate-fade-in-down flex-row justify-evenly rounded-lg p-1 text-sm italic text-black shadow-2xl `}
       >
         {member}
       </li>
@@ -25,23 +25,23 @@ export default function IntroCard({ member }) {
 
   return (
     <>
-      <div className="w-96 max-w-md h-96 py-4 px-8 m-10 bg-gradient-to-br from-slate-700 to-cyan-600 shadow-2xl rounded-lg my-20">
-        <div className="flex justify-center md:justify-end -mt-16 ">
+      <div className="m-10 my-20 h-96 w-96 max-w-md rounded-lg  bg-gradient-to-br from-slate-700 to-cyan-600 py-4 px-8 shadow-2xl ">
+        <div className="-mt-16 flex justify-center md:justify-end ">
           <img
-            className="w-40 h-40 object-cover rounded-full border-2 border-grey shadow-2xl"
+            className="border-grey h-40 w-40 rounded-full border-2 object-cover shadow-2xl"
             src={member.image}
             alt={member.name}
           />
         </div>
 
-        <h1 className=" self-center text-white text-3xl font-semibold ">
+        <h1 className=" self-center text-3xl font-semibold text-white ">
           {member.name} {member.family}
         </h1>
-        <h2 className="self-center text-white text-ml font-sans italic">
+        <h2 className="text-ml self-center font-sans italic text-white">
           {member.jtitle}
         </h2>
 
-        <ul className="  mt-2 text-white flex flex-row flex-wrap ">
+        <ul className="  mt-2 flex flex-row flex-wrap text-white">
           {listItems}
         </ul>
       </div>
