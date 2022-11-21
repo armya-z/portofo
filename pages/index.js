@@ -1,10 +1,16 @@
 import IntroCard from "../components/introCard.js";
+import Ourservices from "../components/our-services.jsx";
+import MainPost from "../components/posts.jsx";
 
 export default function Home({ members }) {
   return (
     <>
-      <div className="bg-main2 bg-cover bg-fixed">
-        <h1 className="p-5 text-center font-serif text-4xl text-white">
+      <div>
+        <MainPost />
+      </div>
+
+      <div>
+        <h1 className="items-center p-5 text-center font-serif text-4xl text-black">
           Chap Click Team Members
         </h1>
         <div className="fllex-row flex w-full bg-white bg-opacity-0">
@@ -18,13 +24,7 @@ export default function Home({ members }) {
         </div>
       </div>
       <div>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+        <Ourservices />
       </div>
     </>
   );
