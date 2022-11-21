@@ -16,7 +16,7 @@ export default function IntroCard({ member }) {
     (member, index) => (
       <li
         key={member}
-        className={`${listColor[index]} m-2 flex w-16 animate-fade-in-down flex-row justify-evenly rounded-lg p-1 text-sm italic text-black shadow-2xl `}
+        className={`${listColor[index]} m-2 flex w-16 animate-fade-in-down flex-row justify-evenly rounded-lg border border-black p-1 text-sm italic text-black shadow-2xl hover:bg-transparent `}
       >
         {member}
       </li>

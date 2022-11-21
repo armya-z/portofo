@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         pattern: "url('../public/img/code.png')",
-        hero: "url('../public/img/main.jpg')",
+        hero1: "url('../public/img/hero1.jpg')",
+        hero2: "url('../public/img/hero2.jpg')",
+        hero3: "url('../public/img/hero3.jpg')",
         main2: "url('../public/img/main2.jpg')",
       },
     },

@@ -34,6 +34,7 @@ export default function OurServices() {
                 src={serviceIcon}
                 width={40}
                 height={40}
+                alt="hero image"
               />
             </figure>
           </section>
@@ -51,6 +52,7 @@ export default function OurServices() {
                 src={serviceIcon}
                 width={40}
                 height={40}
+                alt="hero image"
               />
             </figure>
           </section>
@@ -70,6 +72,7 @@ export default function OurServices() {
                 src={serviceIcon}
                 width={40}
                 height={40}
+                alt="hero image"
               />
             </figure>
           </section>
@@ -87,6 +90,7 @@ export default function OurServices() {
                 src={serviceIcon}
                 width={40}
                 height={40}
+                alt="hero image"
               />
             </figure>
           </section>
