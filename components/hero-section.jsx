@@ -2,7 +2,7 @@ import Image from "next/image";
 import hero1 from "../public/img/hero1.jpg";
 import hero2 from "../public/img/hero2.jpg";
 import hero3 from "../public/img/hero3.jpg";
-export default function () {
+export default function heroSection() {
   return (
     <>
       <div>
@@ -12,7 +12,6 @@ export default function () {
               Chapclick Group
               <hr />
               <p className="mt-5 text-base italic">
-                {" "}
                 Do Not Hesitate
               </p>
             </h1>

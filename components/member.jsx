@@ -1,4 +1,4 @@
-export default function IntroCard({ member }) {
+export default function MemberCard({ member }) {
   const listColor = [
     `bg-red-400`,
     `bg-orange-400`,

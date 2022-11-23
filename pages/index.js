@@ -1,4 +1,4 @@
-import IntroCard from "../components/introCard.jsx";
+import MemberCard from "../components/member.jsx";
 import MainPost from "../components/postCard.jsx";
 import OurServices from "../components/our-services";
 import HeroSection from "../components/hero-section.jsx";
@@ -32,7 +32,7 @@ export default function Home({ members, posts }) {
           {members.map((member) => {
             return (
               <div key={member.id}>
-                <IntroCard member={member} />
+                <MemberCard member={member} />
               </div>
             );
           })}
