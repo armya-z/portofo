@@ -1,13 +1,11 @@
-export default function postPage({ post }) {
+import PostPage from "../../components/postPage";
+
+export default function postPage({
+  post,
+  allpost,
+}) {
   return (
-    <>
-      <h1>{post.title}</h1>
-      <p>{post.body}</p>
-      <p>{post.author}</p>
-      <figure>
-        <img src={post.image} />
-      </figure>
-    </>
+    <PostPage post={post} allpost={allpost} />
   );
 }
 
@@ -32,14 +30,20 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  console.log(context);
   const response = await fetch(
     `https://634d1dd9acb391d34a944653.mockapi.io/api/v1/posts/${params.postId}`
   );
   const data = await response.json();
+
+  const allPostResponse = await fetch(
+    "https://634d1dd9acb391d34a944653.mockapi.io/api/v1/posts"
+  );
+  const allPostData =
+    await allPostResponse.json();
   return {
     props: {
       post: data,
+      allpost: allPostData,
     },
     revalidate: 10,
   };
