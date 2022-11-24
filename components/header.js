@@ -27,7 +27,7 @@ export default function Header() {
           <li>
             <Link
               className="transition-colors hover:text-cyan-500"
-              href="/about-us"
+              href="/team"
             >
               about us
             </Link>

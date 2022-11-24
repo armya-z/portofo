@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import MemberCard from "../../components/member";
 
 export default function allTeam({ members }) {
@@ -10,7 +12,9 @@ export default function allTeam({ members }) {
         {members.map((member) => {
           return (
             <div key={member.id}>
-              <MemberCard member={member} />
+              <Link href={`/team/${member.id}`}>
+                <MemberCard member={member} />
+              </Link>
             </div>
           );
         })}
