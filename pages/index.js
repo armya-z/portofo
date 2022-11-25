@@ -13,7 +13,7 @@ export default function Home({ members, posts }) {
         <h2 className="items-center p-5 text-center font-serif text-4xl text-black">
           Blog Articles
         </h2>
-        <div className="flex flex-row justify-evenly p-5">
+        <div className="flex flex-col justify-evenly p-5 md:flex-row">
           {posts.slice(0, 3).map((post) => {
             return (
               <div key={post.id}>
@@ -23,12 +23,13 @@ export default function Home({ members, posts }) {
           })}
         </div>
       </div>
+      {}
 
       <div>
         <h1 className="items-center p-5 text-center font-serif text-4xl text-black">
           Chap Click Team Members
         </h1>
-        <div className="fllex-row flex w-full bg-white bg-opacity-0">
+        <div className="flex w-full flex-col bg-white bg-opacity-0 lg:flex-row">
           {members.map((member) => {
             return (
               <div key={member.id}>
