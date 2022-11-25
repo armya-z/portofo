@@ -3,22 +3,20 @@ import Link from "next/link";
 export default function MainPost({ post }) {
   return (
     <>
-      <div className="h-84 max-w-xs rounded-lg border border-gray-200 bg-white p-5 shadow-xl dark:border-gray-700 dark:bg-gray-800">
+      <div className=" rounded-lg border border-gray-200 bg-white p-5 shadow-xl dark:border-gray-700 dark:bg-gray-800">
         <figure>
           <img
-            className="h-48 max-h-48 rounded-t-lg border border-black shadow-xl"
+            className=" rounded-t-lg border border-black shadow-xl"
             src={post.image}
             alt="image name"
           />
         </figure>
 
-        <div className="h-48 p-5">
-          <h3 className="mb-2 mt-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className=" py-5">
+          <h3 className="mb-2 mt-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-base lg:text-sm xl:text-xs">
             {post.title}
           </h3>
-          <p className="m-h-10 mb-3 truncate font-normal text-gray-700 dark:text-gray-400">
-            {post.body}
-          </p>
+
           <p className="mb-3 font-normal text-gray-300">
             {post.author}
           </p>

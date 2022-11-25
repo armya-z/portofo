@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../header";
 
 const Container = ({ children }) => {
   return (
-    <div className="container flex flex-col bg-red-500">
-      <Header />
-      {children}
-    </div>
+    <>
+      <div className="container flex w-screen flex-col justify-center ">
+        {children}
+      </div>
+    </>
   );
 };
 

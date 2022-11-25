@@ -4,20 +4,18 @@ import hero2 from "../public/img/hero2.jpg";
 import hero3 from "../public/img/hero3.jpg";
 export default function heroSection() {
   return (
-    <>
-      <div>
-        <div className="h-screen bg-hero3 bg-cover">
-          <section className="flex h-screen items-center justify-center">
-            <h1 className=" w-fit rounded-2xl bg-white p-4 text-center text-5xl text-black">
-              Chapclick Group
-              <hr />
-              <p className="mt-5 text-base italic">
-                Do Not Hesitate
-              </p>
-            </h1>
-          </section>
+    <div className="herosection flex w-screen justify-center">
+      <div className="flex h-screen w-screen items-center justify-center bg-hero2 bg-cover">
+        <div className="w-2/5 rounded-lg bg-white">
+          <h1 className="p-2 text-center text-sm text-black ">
+            Chapclick Group
+            <br />
+            <p className="text-xs">
+              Do Not Hesitate
+            </p>
+          </h1>
         </div>
       </div>
-    </>
+    </div>
   );
 }

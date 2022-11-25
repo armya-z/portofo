@@ -25,8 +25,8 @@ export default function MemberCard({ member }) {
 
   return (
     <>
-      <div className="m-10 my-20 h-96 w-96 max-w-md rounded-lg  bg-gradient-to-br from-slate-700 to-cyan-600 py-4 px-8 shadow-2xl ">
-        <div className="-mt-16 flex justify-center md:justify-end ">
+      <div className="m-2 my-10 h-4/5 rounded-lg bg-gradient-to-br from-slate-700 to-cyan-600 py-4 px-8 shadow-2xl ">
+        <div className="-mt-16 flex justify-center">
           <img
             className="border-grey h-40 w-40 rounded-full border-2 object-cover shadow-2xl"
             src={member.image}
@@ -34,14 +34,14 @@ export default function MemberCard({ member }) {
           />
         </div>
 
-        <h1 className=" self-center text-3xl font-semibold text-white ">
+        <h1 className=" text-center text-3xl font-semibold text-white ">
           {member.name} {member.family}
         </h1>
-        <h2 className="text-ml self-center font-sans italic text-white">
+        <h2 className="text-ml text-center font-sans italic text-white">
           {member.jtitle}
         </h2>
 
-        <ul className="  mt-2 flex flex-row flex-wrap text-white">
+        <ul className="  mt-2 grid grid-cols-3 justify-items-center text-white">
           {listItems}
         </ul>
       </div>

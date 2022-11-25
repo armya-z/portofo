@@ -5,49 +5,52 @@ import serviceIcon from "../public/img/service.png";
 export default function OurServices() {
   return (
     <>
-      <div className="flex flex-col items-center ">
+      <div className="mt-10 flex flex-col items-center">
         <h1 className="text-2xl">Our Services</h1>
         <h2 className="text-ml">Why Us?!</h2>
       </div>
 
-      <div className="flex justify-evenly">
-        <section className="w-92 ">
+      <div className="mt-3 justify-around">
+        <section className="flex justify-center">
           <Image
             src={placeholder}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="hero image"
             className="shadow-ml rounded-xl"
           />
         </section>
-        <section className="w-68  mt-10 text-center">
-          <section>
-            <h1>title</h1>
-            <h2>
-              Dolore consectetur eiusmod proident
-              <hr />
-              anim aliquip amet laboris aliquip.
-              <hr />
-            </h2>
-            <figure className="mt-5 flex justify-center pt-5">
-              <Image
-                src={serviceIcon}
-                width={40}
-                height={40}
-                alt="hero image"
-              />
-            </figure>
-          </section>
+        <div className="mx-5 mt-5 grid grid-cols-2 justify-evenly gap-2 lg:grid-cols-4">
+          <div className="mt-5 text-center">
+            <div>
+              <h1 className="text-xl">title</h1>
+              <h2>
+                Dolore consectetur eiusmod
+                proident
+                <br />
+                anim aliquip amet laboris aliquip.
+                <br />
+              </h2>
+              <figure className="mt-5 flex justify-center">
+                <Image
+                  src={serviceIcon}
+                  width={40}
+                  height={40}
+                  alt="hero image"
+                />
+              </figure>
+            </div>
+          </div>
 
-          <section className="m-10">
-            <h1>title</h1>
+          <div className="mt-5 text-center">
+            <h1 className="text-xl">title</h1>
             <h2>
               Dolore consectetur eiusmod proident
-              <hr />
+              <br />
               anim aliquip amet laboris aliquip.
-              <hr />
+              <br />
             </h2>
-            <figure className="mt-5 flex justify-center pt-5">
+            <figure className="mt-5 flex justify-center">
               <Image
                 src={serviceIcon}
                 width={40}
@@ -55,19 +58,17 @@ export default function OurServices() {
                 alt="hero image"
               />
             </figure>
-          </section>
-        </section>
+          </div>
 
-        <section className="w-68  mt-10 text-center">
-          <section>
-            <h1>title</h1>
+          <div className="mt-5 text-center">
+            <h1 className="text-xl">title</h1>
             <h2>
               Dolore consectetur eiusmod proident
-              <hr />
+              <br />
               anim aliquip amet laboris aliquip.
-              <hr />
+              <br />
             </h2>
-            <figure className="mt-5 flex justify-center pt-5">
+            <figure className="mt-5 flex justify-center">
               <Image
                 src={serviceIcon}
                 width={40}
@@ -75,17 +76,17 @@ export default function OurServices() {
                 alt="hero image"
               />
             </figure>
-          </section>
+          </div>
 
-          <section className="m-10">
-            <h1>title</h1>
+          <div className="mt-5 text-center">
+            <h1 className="text-xl">title</h1>
             <h2>
               Dolore consectetur eiusmod proident
-              <hr />
+              <br />
               anim aliquip amet laboris aliquip.
-              <hr />
+              <br />
             </h2>
-            <figure className="mt-5 flex justify-center pt-5">
+            <figure className="mt-5 flex justify-center">
               <Image
                 src={serviceIcon}
                 width={40}
@@ -93,8 +94,8 @@ export default function OurServices() {
                 alt="hero image"
               />
             </figure>
-          </section>
-        </section>
+          </div>
+        </div>
       </div>
     </>
   );
