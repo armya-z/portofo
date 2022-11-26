@@ -20,7 +20,7 @@ export default function OurServices() {
             className="shadow-ml rounded-xl"
           />
         </section>
-        <div className="mx-5 mt-5 grid grid-cols-2 justify-evenly gap-2 lg:grid-cols-4">
+        <div className="mx-5 mt-5 grid grid-cols-2 justify-evenly gap-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4">
           <div className="mt-5 text-center">
             <div>
               <h1 className="text-xl">title</h1>

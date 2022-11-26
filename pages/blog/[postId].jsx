@@ -1,6 +1,6 @@
 import PostPage from "../../components/postPage";
 
-export default function postPage({
+export default function postsPage({
   post,
   allpost,
 }) {

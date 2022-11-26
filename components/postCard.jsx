@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MainPost({ post }) {
   return (
     <>
-      <div className=" rounded-lg border border-gray-200 bg-white p-5 shadow-xl dark:border-gray-700 dark:bg-gray-800">
+      <div className="m-2 rounded-lg border border-gray-200 bg-white p-5 shadow-xl dark:border-gray-700 dark:bg-gray-800">
         <figure>
           <img
             className=" rounded-t-lg border border-black shadow-xl"

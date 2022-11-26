@@ -7,7 +7,7 @@ export default function Home({ members, posts }) {
   return (
     <>
       <div>
-        <div className="flex justify-center">
+        <div>
           <HeroSection />
         </div>
 
@@ -15,7 +15,7 @@ export default function Home({ members, posts }) {
           Blog Articles
         </h2>
 
-        <div className="grid grid-cols-1 justify-evenly gap-y-5 p-5 sm:grid-cols-2 sm:gap-x-1 md:grid-cols-3 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="mx-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
           {posts.map((post) => {
             return (
               <div key={post.id}>
@@ -31,7 +31,7 @@ export default function Home({ members, posts }) {
           Chap Click Team Members
         </h1>
 
-        <div className="mt-5 grid grid-cols-1 bg-white bg-opacity-0 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-5 mt-5 grid grid-cols-1 bg-white bg-opacity-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
           {members.map((member) => {
             return (
               <div key={member.id}>

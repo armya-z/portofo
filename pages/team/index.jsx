@@ -8,7 +8,7 @@ export default function allTeam({ members }) {
       <h1 className="my-8 text-center text-4xl">
         All team
       </h1>
-      <div className="fllex-row flex w-full bg-white bg-opacity-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {members.map((member) => {
           return (
             <div key={member.id}>

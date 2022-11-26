@@ -8,12 +8,14 @@ export default function PostPage({
   const postList = allPostTitle.map((item) => {
     return (
       <Link href={`/blog/${item.title}`}>
-        <li className="my-5 flex flex-row-reverse items-center justify-end text-xs">
+        <li className="grid grid-cols-1 items-center justify-center py-8 text-xl ">
           {item.title}
-          <img
-            src={item.image}
-            className="mx-5 w-20 rounded-xl"
-          />
+          <figure className="p-3">
+            <img
+              src={item.image}
+              className=" rounded-xl"
+            />
+          </figure>
         </li>
       </Link>
     );
@@ -21,31 +23,32 @@ export default function PostPage({
 
   return (
     <>
-      <div className="m-10 flex justify-center">
-        <div className="flex w-4/5 flex-col">
-          <figure className="mb-10 self-center">
+      <div className="m-2 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
+          <figure>
             <img
               src={post.image}
-              className="w-full rounded-2xl"
+              className="w-screen rounded-2xl"
             />
           </figure>
           <section className="flex flex-col justify-around">
-            <h1 className="self-center p-10 text-4xl">
+            <h1 className="self-center p-10 text-2xl">
               {post.title}
             </h1>
-            <p className="self-center px-28 py-8 text-lg">
+            <p className="self-center py-2 px-2 text-lg">
               {post.body}
-            </p>
-            <p className="text-ml mb-10 self-center rounded-xl border border-black bg-black p-3 text-white hover:shadow hover:shadow-black">
-              {post.author}
             </p>
           </section>
         </div>
 
-        <div className="border-grey-100 mt-24 flex h-fit w-1/5 rounded-lg border">
-          <section className="mt-5 w-full text-center">
-            <h2>related posts</h2>
-            <ul>{postList}</ul>
+        <div className="border-grey-100 my-10 rounded-lg border">
+          <section className="mt-5 text-center">
+            <h2 className="text-2xl">
+              related posts
+            </h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {postList}
+            </ul>
           </section>
         </div>
       </div>

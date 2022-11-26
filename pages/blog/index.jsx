@@ -3,7 +3,10 @@ import MainPost from "../../components/postCard";
 export default function blog({ posts }) {
   return (
     <>
-      <div className=" flex flex-row justify-evenly">
+      <h1 className="items-center p-5 text-center font-serif text-4xl text-black">
+        blog
+      </h1>
+      <div className=" grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
         {posts.map((post) => {
           return (
             <div key={post.id}>
