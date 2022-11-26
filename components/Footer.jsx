@@ -20,13 +20,13 @@ export default function Footer() {
               <li>contact-us</li>
             </Link>
           </ul>
-          <figure>
+          <figure className="rounded-md bg-white">
             <Link href="/">
               <Image
                 src={Logo}
                 alt="logo of chapclick"
-                width={60}
-                height={60}
+                width={100}
+                height={100}
                 quality={100}
               />
             </Link>
