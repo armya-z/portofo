@@ -23,12 +23,12 @@ export default function PostPage({
 
   return (
     <>
-      <div className="m-2 flex flex-col items-center justify-center">
+      <div className="2xl:mx-30 lg:mx-15 m-2 flex flex-col items-center justify-center xl:mx-20">
         <div className="flex flex-col items-center justify-center">
           <figure>
             <img
               src={post.image}
-              className="w-screen rounded-2xl"
+              className=" rounded-2xl"
             />
           </figure>
           <section className="flex flex-col justify-around">
@@ -46,7 +46,7 @@ export default function PostPage({
             <h2 className="text-2xl">
               related posts
             </h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
               {postList}
             </ul>
           </section>

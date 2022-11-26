@@ -4,7 +4,7 @@ import Logo from "../public/img/chapclicktr.png";
 export default function Header() {
   return (
     <div className="sticky top-0 z-10 bg-white shadow">
-      <div className="mx-auto flex h-16 items-center justify-between px-5">
+      <div className=" mx-5 flex h-16 items-center justify-between px-5">
         <Link href="/">
           <Image
             src={Logo}

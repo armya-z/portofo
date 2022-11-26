@@ -1,13 +1,13 @@
 import React from "react";
+import Footer from "../Footer";
 import Header from "../header";
 const Container = ({ children }) => {
   return (
     <>
       <div className="container flex w-screen flex-col justify-center ">
-        <div>
-          <Header />
-        </div>
-        {children}
+        <Header />
+        <div>{children}</div>
+        <Footer />
       </div>
     </>
   );
